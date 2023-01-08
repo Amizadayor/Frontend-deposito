@@ -1,0 +1,56 @@
+<button class="title" routerLink="/principal">Inicio</button>
+<br>
+
+<h3>DATOS DE LA TABLA EMPLEADO</h3>
+
+<table class="table">
+  <thead class="th-encabezado">
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Usuario </th>
+      <th scope="col">Password </th>
+      <th scope="col">Primer nombre </th>
+      <th scope="col">Segundo nombre </th>
+      <th scope="col">Apellido paterno </th>
+      <th scope="col">Apellido materno </th>
+      <th scope="col">Numero de telefono </th>
+      <th scope="col">Direccion </th>
+      <th scope="col">Curp </th>
+      <th scope="col">RFC </th>
+
+    </tr>
+  </thead>
+  <tbody class="tb-contenido">
+    <tr *ngFor="let empleado of emple; let iControl=index">
+      <th scope="row">{{empleado.Id}}</th>
+
+      <td>{{empleado.Usuario}}</td>
+      <td>{{empleado.Password_empleado}}</td>
+      <td>{{empleado.Nombre_1}}</td>
+      <td>{{empleado.Nombre_2}}</td>
+      <td>{{empleado.Apellido_paterno}}</td>
+      <td>{{empleado.Apellido_materno}}</td>
+      <td>{{empleado.Numero_telefono}}</td>
+      <td>{{empleado.Direccion}}</td>
+      <td>{{empleado.Curp}}</td>
+      <td>{{empleado.RFC}}</td>
+
+      <td>
+        <button type="button" class="btn-editar" (click)="EditarEmpleado(empleado.Id)">EDITAR</button>
+      </td>
+
+      <td></td>
+
+      <td>
+        <button type="button" class="btn-borrar" (click)="EliminarEmpleado(empleado.Id,iControl)">BORRAR</button>
+      </td>
+
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<button routerLink="../empleadoAgregar" class="btn-crear">Nuevo empleado</button>
+
+<br>

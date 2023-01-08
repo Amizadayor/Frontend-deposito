@@ -1,0 +1,30 @@
+<button class="title" routerLink="/productoventa">Regresar</button>
+<br>
+<h3> Nuevo Producto venta</h3>
+
+<div class="card">
+  <form [formGroup]="FormProductoventa" (submit)="ingresarProduven()" ngNativeValidate>
+    <div class="form-1">
+      <label for="">Total venta </label>
+      <input required type="text" name="" formControlName="Total_venta" id="" class="input">
+    </div>
+    <div class="form-2">
+      <label for="">Cantidad de producto vendido </label>
+      <input required type="text" name="" formControlName="Cantidad_producto_vendido" id="" class="input">
+    </div>
+    <div class="form-3">
+      <label for="">Id del producto</label>
+      <input required type="text" name="" formControlName="Producto_id" id="" class="input">
+    </div>
+    <div class="form-4">
+      <label for="">Id de la venta</label>
+      <input required type="text" name="" formControlName="Venta_id" id="" class="input">
+    </div>
+
+    <br>
+
+    <button class="btn-agregar">Agregar</button>
+  </form>
+</div>
+
+<br>

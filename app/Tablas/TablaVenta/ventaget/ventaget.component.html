@@ -1,0 +1,45 @@
+<button class="title" routerLink="/principal">Inicio</button>
+
+<h3>DATOS DE LA TABLA VENTA</h3>
+
+<table class="table">
+  <thead class="th-encabezado">
+    <tr>
+      <th scope="col">Id </th>
+      <th scope="col">Total final </th>
+      <th scope="col">Cantidad producto final </th>
+      <th scope="col">Fecha venta </th>
+      <th scope="col">Id del cliente </th>
+      <th scope="col">Id del empleado </th>
+
+    </tr>
+  </thead>
+  <tbody class="tb-contenido">
+    <tr *ngFor="let venta of vent; let iControl=index">
+      <th scope="row">{{venta.Id}}</th>
+
+      <td>{{venta.Total_final}}</td>
+      <td>{{venta.Cantidad_producto_final}}</td>
+      <td>{{venta.Fecha_venta}}</td>
+      <td>{{venta.Cliente_id}}</td>
+      <td>{{venta.Empleado_id}}</td>
+
+      <td>
+        <button type="button" class="btn-editar" (click)="EditarVenta(venta.Id)">EDITAR</button>
+      </td>
+
+      <td></td>
+
+      <td>
+        <button type="button" class="btn-borrar" (click)="EliminarVenta(venta.Id,iControl)">BORRAR</button>
+      </td>
+
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<button routerLink="../ventaAgregar" class="btn-crear">Nuevo Venta</button>
+
+<br>

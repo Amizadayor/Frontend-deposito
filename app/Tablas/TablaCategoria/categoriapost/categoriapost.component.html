@@ -1,0 +1,23 @@
+<button class="title" routerLink="/categoria">Regresar</button>
+
+<h3> Nueva Categoria</h3>
+
+<div class="card">
+  <form [formGroup]="FormCategoria" (submit)="ingresarCatego()" ngNativeValidate>
+    <div class="form-1">
+      <label for="">Nombre de categoria</label>
+      <input required type="text" name="" formControlName="Nombre_categoria" id="" class="input">
+    </div>
+
+    <div class="form-2">
+      <label for="">Capacidad del producto</label>
+      <input required type="text" name="" formControlName="Capacidad_producto" id="" class="input">
+    </div>
+
+    <br>
+
+    <button class="btn-agregar">Agregar</button>
+  </form>
+</div>
+
+<br>

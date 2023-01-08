@@ -1,0 +1,34 @@
+<button class="title" routerLink="/producto">Regresar</button>
+
+<h3>Editar Producto</h3>
+
+<div class="card">
+  <form [formGroup]="FormProducto" (ngSubmit)="put()" ngNativeValidate>
+    <div class="form-1">
+      <label>Nombre del producto</label>
+      <input type="text" required formControlName="Nombre_producto" id="" class="input">
+    </div>
+    <div class="form-2">
+      <label>Precio del producto</label>
+      <input type="text" required name="" formControlName="Precio_producto" id="" class="input">
+    </div>
+    <div class="form-3">
+      <label>Stock</label>
+      <input type="text" required name="" formControlName="Stock" id="" class="input">
+    </div>
+    <div class="form-4">
+      <label>Id de la categoria</label>
+      <input type="text" required name="" formControlName="Categoria_id" id="" class="input">
+    </div>
+    <div class="form-5">
+      <label>Id del proveedor</label>
+      <input type="text" required name="" formControlName="Proveedor_id" id="" class="input">
+    </div>
+
+    <br>
+
+    <button class="btn-guardar">Guardar Cambio</button>
+  </form>
+</div>
+
+<br>

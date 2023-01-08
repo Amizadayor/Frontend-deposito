@@ -1,0 +1,45 @@
+<button class="title" routerLink="/principal">Incio</button>
+<br>
+
+<h3>DATOS DE LA TABLA CLIENTE</h3>
+
+<table class="table">
+  <thead class="th-encabezado">
+    <tr>
+      <th scope="col">Id </th>
+      <th scope="col">Total venta </th>
+      <th scope="col">Cantidad producto vendido </th>
+      <th scope="col">Id del producto </th>
+      <th scope="col">Id de la venta </th>
+
+    </tr>
+  </thead>
+  <tbody class="tb-contenido">
+    <tr *ngFor="let productoventa of produventa; let iControl=index">
+      <th scope="row">{{productoventa.Id}}</th>
+
+      <td>{{productoventa.Total_venta}}</td>
+      <td>{{productoventa.Cantidad_producto_vendido}}</td>
+      <td>{{productoventa.Producto_id}}</td>
+      <td>{{productoventa.Venta_id}}</td>
+
+      <td>
+        <button type="button" class="btn-editar" (click)="EditarProductoventa(productoventa.Id)">EDITAR</button>
+      </td>
+
+      <td></td>
+
+      <td>
+        <button type="button" class="btn-borrar"
+          (click)="EliminarProductoventa(productoventa.Id,iControl)">BORRAR</button>
+      </td>
+
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<button routerLink="../productoventaAgregar" class="btn-crear">Nuevo Producto venta</button>
+
+<br>

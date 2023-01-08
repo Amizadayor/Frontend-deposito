@@ -1,0 +1,45 @@
+<button class="title" routerLink="/principal">Inicio</button>
+<br>
+
+<p>DATOS DE LA TABLA CATEGORIA</p>
+
+<table class="table">
+  <thead class="th-encabezado">
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Nombre de la categoria </th>
+      <th scope="col">Capacidad del producto </th>
+
+    </tr>
+  </thead>
+  <tbody class="tb-contenido">
+    <tr *ngFor="let categoria of catego; let iControl=index">
+      <th scope="row">{{categoria.Id}}</th>
+
+      <td>{{categoria.Nombre_categoria}}</td>
+      <td>{{categoria.Capacidad_producto}}</td>
+
+      <td>
+        <button type="button" class="btn-editar" (click)="EditarCategoria(categoria.Id)">
+          <span class="material-symbols-outlined">
+            </span>
+            EDITAR</button>
+      </td>
+
+      <td></td>
+
+      <td>
+        <button type="button" class="btn-borrar" (click)="EliminarCategoria(categoria.Id,iControl)">BORRAR</button>
+      </td>
+
+
+    </tr>
+
+  </tbody>
+</table>
+
+<br>
+<div>
+  <button routerLink="../categoriaAgregar" class="btn-crear">Nueva Categoria</button>
+</div>
+<br>

@@ -1,0 +1,48 @@
+<button class="title" routerLink="/principal">Inicio</button>
+<br>
+
+<h3>DATOS DE LA TABLA DE PROVEEDORES</h3>
+
+<table class="table">
+  <thead class="th-encabezado">
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Primer nombre </th>
+      <th scope="col">Segundo nombre </th>
+      <th scope="col">Apellido paterno </th>
+      <th scope="col">Apellido materno </th>
+      <th scope="col">Numero de telefono </th>
+      <th scope="col">Empresa </th>
+
+    </tr>
+  </thead>
+  <tbody class="tb-contenido">
+    <tr *ngFor="let proveedor of provee; let iControl=index">
+      <th scope="row">{{proveedor.Id}}</th>
+
+      <td>{{proveedor.Nombre_1}}</td>
+      <td>{{proveedor.Nombre_2}}</td>
+      <td>{{proveedor.Apellido_paterno}}</td>
+      <td>{{proveedor.Apellido_materno}}</td>
+      <td>{{proveedor.Numero_telefono}}</td>
+      <td>{{proveedor.Empresa}}</td>
+
+      <td>
+        <button type="button" class="btn-editar" (click)="EditarProveedor(proveedor.Id)">EDITAR</button>
+      </td>
+
+      <td></td>
+
+      <td>
+        <button type="button" class="btn-borrar" (click)="EliminarProveedor(proveedor.Id,iControl)">BORRAR</button>
+      </td>
+
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<button routerLink="../proveedorAgregar" class="btn-crear">Nuevo empleado</button>
+
+<br>

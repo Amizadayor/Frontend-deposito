@@ -1,0 +1,45 @@
+<button class="title" routerLink="/principal">Inicio</button>
+
+<h3>DATOS DE LA TABLA PRODUCTO</h3>
+
+<table class="table">
+  <thead class="th-encabezado">
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Nombre del producto </th>
+      <th scope="col">Precio del producto </th>
+      <th scope="col">Stock </th>
+      <th scope="col">Categoria Id </th>
+      <th scope="col">Proveedor Id </th>
+
+    </tr>
+  </thead>
+  <tbody class="tb-contenido">
+    <tr *ngFor="let producto of produ; let iControl=index">
+      <th scope="row">{{producto.Id}}</th>
+
+      <td>{{producto.Nombre_producto}}</td>
+      <td>{{producto.Precio_producto}}</td>
+      <td>{{producto.Stock}}</td>
+      <td>{{producto.Categoria_id}}</td>
+      <td>{{producto.Proveedor_id}}</td>
+
+      <td>
+        <button type="button" class="btn-editar" (click)="EditarProducto(producto.Id)">EDITAR</button>
+      </td>
+
+      <td></td>
+
+      <td>
+        <button type="button" class="btn-borrar" (click)="EliminarProducto(producto.Id,iControl)">BORRAR</button>
+      </td>
+
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<button routerLink="../productoAgregar" class="btn-crear">Nuevo Producto</button>
+
+<br>

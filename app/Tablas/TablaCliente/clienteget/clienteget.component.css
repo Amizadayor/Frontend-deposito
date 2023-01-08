@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@600&display=swap');
+
+
+.title {
+    font-family: 'Righteous', cursive;
+    width: 150px;
+    height: 50px;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c5c5c5,
+        -6px -6px 12px #ffffff;
+}
+
+h3 {
+    font-family: 'Righteous', cursive;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: x-large;
+}
+
+table {
+    font-family: 'Noto Sans Mono', monospace;
+    font-size: 90%;
+    color: black;
+    width: 90%;
+    margin: 1rem auto;
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.5em;
+    border: 3px solid #e4e4e4;
+}
+
+thead th:nth-child(1) {
+    width: 30%;
+}
+
+thead th:nth-child(2) {
+    width: 20%;
+}
+
+thead th:nth-child(3) {
+    width: 15%;
+}
+
+th,td {
+    padding: 20px;
+}
+
+.th-encabezado, .tb-contenido {
+    font-family: 'Noto Sans Mono', monospace;
+    text-align: center;
+    font-size: 120%;
+
+}
+
+.btn-editar {
+    font-family: 'Righteous', cursive;
+    color: rgb(255, 255, 255);
+    width: 110px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #3c6ff9;
+    border: 1px solid #ffffff;
+}
+
+.btn-borrar {
+    font-family: 'Righteous', cursive;
+    color: rgb(255, 255, 255);
+    width: 110px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #f93c3c;
+    border: 1px solid #ffffff;
+}
+
+.btn-crear {
+    font-family: 'Righteous', cursive;
+    color: rgb(255, 255, 255);
+    width: 110px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #6c6cff;
+    border: 1px solid #ffffff;
+}
+
+button:hover {
+    border: 1px solid rgb(205, 205, 205);
+}
+
+button:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5,
+        inset -4px -4px 12px #ffffff;
+}

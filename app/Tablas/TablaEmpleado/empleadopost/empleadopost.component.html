@@ -1,0 +1,54 @@
+<button class="title" routerLink="/empleado">Regresar</button>
+
+<h3> Nuevo Empleado</h3>
+
+<div class="card">
+  <form [formGroup]="FormEmpleado" (submit)="ingresarEmple()" ngNativeValidate>
+    <div class="form-1">
+      <label for="">Usuario </label>
+      <input required type="text" name="" formControlName="Usuario" id="" class="input">
+    </div>
+    <div class="form-1">
+      <label for="">Password </label>
+      <input required type="text" name="" formControlName="Password_empleado" id="" class="input">
+    </div>
+    <div class="form-1">
+      <label for="">Primer nombre </label>
+      <input required type="text" name="" formControlName="Nombre_1" id="" class="input">
+    </div>
+    <div class="form-1">
+      <label for="">Segundo nombre </label>
+      <input required type="text" name="" formControlName="Nombre_2" id="" class="input">
+    </div>
+    <div class="form-1">
+      <label for="">Apellido paterno </label>
+      <input required type="text" name="" formControlName="Apellido_paterno" id="" class="input">
+    </div>
+    <div class="form-1">
+      <label for="">Apellido materno </label>
+      <input required type="text" name="" formControlName="Apellido_materno" id="" class="input">
+    </div>
+    <div class="form-1">
+      <label for="">Numero de telefono </label>
+      <input required type="text" name="" formControlName="Numero_telefono" id="" class="input">
+    </div>
+    <div class="form-1">
+      <label for="">Direccion </label>
+      <input required type="text" name="" formControlName="Direccion" id="" class="input">
+    </div>
+    <div class="form-1">
+      <label for="">Curp </label>
+      <input required type="text" name="" formControlName="Curp" id="" class="input">
+    </div>
+    <div class="form-1">
+      <label for="">RFC </label>
+      <input required type="text" name="" formControlName="RFC" id="" class="input">
+    </div>
+
+    <br>
+
+    <button class="btn-agregar">Agregar</button>
+  </form>
+</div>
+
+<br>

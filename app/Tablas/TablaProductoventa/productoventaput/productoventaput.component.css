@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@600&display=swap');
+
+
+.title {
+    font-family: 'Righteous', cursive;
+    width: 150px;
+    height: 50px;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c5c5c5,
+        -6px -6px 12px #ffffff;
+}
+
+h3 {
+    font-family: 'Righteous', cursive;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: x-large;
+}
+.card {
+    font-family: 'Righteous';
+    text-align: center;
+    font-size: 18px;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: #e8e8e8;
+    padding: 1.8rem;
+    border: 2px solid #e8e8e8;
+    transition: 0.5s ease-out;
+    overflow: visible;
+
+}
+
+.form-2, .form-3, .form-4{
+    margin-top: 20px;
+}
+
+.input {
+    font-family: 'Righteous';
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 254px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    background: transparent;
+
+}
+
+.input:focus {
+    outline: none;
+}
+
+.btn-guardar{
+    font-family: 'Righteous', cursive;
+    color: rgb(255, 255, 255);
+    width: 110px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #3c6ff9;
+    border: 1px solid #ffffff;
+}
+
+button:hover {
+    border: 1px solid rgb(205, 205, 205);
+}
+
+button:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5,
+        inset -4px -4px 12px #ffffff;
+}

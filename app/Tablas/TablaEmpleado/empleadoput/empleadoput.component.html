@@ -1,0 +1,48 @@
+<button routerLink="/empleado">VOLVER</button>
+
+  <h3 class="text-center">Editar Empleado</h3>
+
+  <br>
+
+  <div class="container">
+      <form [formGroup]="FormEmpleado" (ngSubmit)="put()" ngNativeValidate>
+        <div class="form-group">
+          <label>Usuario</label>
+          <input type="text" required formControlName="Usuario" id="" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="text" required name="" formControlName="Password_empleado" id="" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Primer nombre</label>
+            <input type="text" required name="" formControlName="Nombre_1" id="" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Segundo nombre</label>
+            <input type="text" required name="" formControlName="Nombre_2" id="" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Apellido paterno</label>
+            <input type="text" required name="" formControlName="Apellido_paterno" id="" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>apellido materno</label>
+            <input type="text" required name="" formControlName="Apellido_materno" id="" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Numero de telefono</label>
+            <input type="text" required name="" formControlName="Numero_telefono" id="" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Direccion</label>
+            <input type="text" required name="" formControlName="Direccion" id="" class="form-control">
+        </div>
+         
+          <br>
+
+        <button class="centrado" >Guardar Cambio</button>
+      </form>
+  </div>
+  
+      <br>

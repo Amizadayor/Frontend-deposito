@@ -1,0 +1,50 @@
+<button class="title" routerLink="/principal">Inicio</button>
+<br>
+
+<h3>DATOS DE LA TABLA CLIENTE</h3>
+
+<table class="table">
+  <thead class="th-encabezado ">
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Primer nombre </th>
+      <th scope="col">Segundo nombre </th>
+      <th scope="col">Apellido paterno </th>
+      <th scope="col">Apellido materno </th>
+      <th scope="col">Numero de telefono </th>
+      <th scope="col">Direccion </th>
+      <th scope="col">Fecha de nacimiento </th>
+
+    </tr>
+  </thead>
+  <tbody class="tb-contenido">
+    <tr *ngFor="let cliente of clien; let iControl=index">
+      <th scope="row">{{cliente.Id}}</th>
+
+      <td>{{cliente.Nombre_1}}</td>
+      <td>{{cliente.Nombre_2}}</td>
+      <td>{{cliente.Apellido_paterno}}</td>
+      <td>{{cliente.Apellido_materno}}</td>
+      <td>{{cliente.Numero_telefono}}</td>
+      <td>{{cliente.Direccion}}</td>
+      <td>{{cliente.Fecha_nacimiento}}</td>
+
+      <td>
+        <button type="button" class="btn-editar" (click)="EditarCliente(cliente.Id)">EDITAR</button>
+      </td>
+
+      <td></td>
+
+      <td>
+        <button type="button" class="btn-borrar" (click)="EliminarCliente(cliente.Id,iControl)">BORRAR</button>
+      </td>
+
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<button routerLink="../clienteAgregar" class="btn-crear">Nuevo Cliente</button>
+
+<br>

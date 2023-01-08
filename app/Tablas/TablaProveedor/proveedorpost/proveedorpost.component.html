@@ -1,0 +1,38 @@
+<button class="title" routerLink="/proveedor">Regresar</button>
+
+<h3> Nuevo Proveedor</h3>
+
+<div class="card">
+  <form [formGroup]="FormProveedor" (submit)="ingresarProvee()" ngNativeValidate>
+    <div class="form-1">
+      <label for="">Primer nombre </label>
+      <input required type="text" name="" formControlName="Nombre_1" id="" class="input">
+    </div>
+    <div class="form-2">
+      <label for="">Segundo nombre </label>
+      <input required type="text" name="" formControlName="Nombre_2" id="" class="input">
+    </div>
+    <div class="form-3">
+      <label for="">Apellido paterno </label>
+      <input required type="text" name="" formControlName="Apellido_paterno" id="" class="input">
+    </div>
+    <div class="form-4">
+      <label for="">Apellido materno </label>
+      <input required type="text" name="" formControlName="Apellido_materno" id="" class="input">
+    </div>
+    <div class="form-5">
+      <label for="">Numero de telefono </label>
+      <input required type="text" name="" formControlName="Numero_telefono" id="" class="input">
+    </div>
+    <div class="form-6">
+      <label for="">Empresa </label>
+      <input required type="text" name="" formControlName="Empresa" id="" class="input">
+    </div>
+
+    <br>
+
+    <button class="btn-agregar">Agregar</button>
+  </form>
+</div>
+
+<br>
